@@ -8,7 +8,9 @@
     "test": "jest",
     "dev": "nodemon server/index.js",
     "prestart": "npm install",
-    "start": "node server/index.js"
+    "start": "node server/index.js",
+    "build-image":"docker build -t maxlevtov/todo .",
+    "run-container-as-image":"docker run -p 3000:3000 maxlevtov/todo"
   },
   "dependencies": {
     "body-parser": "^1.19.0",
